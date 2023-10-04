@@ -1,0 +1,14 @@
+    * {
+        margin: 0;
+    }
+
+    body {
+        width: 19.6cm;
+        /* direction: ltr; */
+    }
+
+    p {
+        white-space: nowrap;
+    }
+
+    

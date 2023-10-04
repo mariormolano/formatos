@@ -1,0 +1,15 @@
+.BaseLista{
+    display: flex;
+}
+
+.num{
+    width: 38px;
+}
+
+.item{
+    width: 244px;
+}
+
+.mes{
+    width: 36px;
+}
