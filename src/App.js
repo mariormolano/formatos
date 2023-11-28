@@ -23,9 +23,10 @@ function App() {
     if (lista === "formato") dispatch(setListaTipo(valor));
     if (lista === "cliente") {
       dispatch(setListaEdificio(valor));
-      const BusquedaCliente = ListaClientes.filter((cli) => cli.edificio === valor);
+      const BusquedaCliente = ListaClientes.filter(
+        (cli) => cli.edificio === valor
+      );
       dispatch(setCliente(BusquedaCliente[0]));
-
     }
     if (lista === "mes") dispatch(setMes(valor));
   };
@@ -34,9 +35,12 @@ function App() {
     <div className="App">
       <Contenido mostrarFormatos={mostrarFormatos} />
       {listaTipo === "Mantenimiento" && listaEdificio && Mes ? (
-        <Mantenimiento />
+        <Mantenimiento tipo="Mantenimiento" />
       ) : null}
 
+      {listaTipo === "Cuenta de cobro" && listaEdificio && Mes ? (
+        <Mantenimiento tipo="Cuenta de cobro" />
+      ) : null}
     </div>
   );
 }

@@ -1,3 +1,25 @@
 .texto_descripcion {
-    word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.textarea_observaciones {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 1108px;
+  left: 0px;
+  width: 735px;
+  height: 128px;
+}
+
+.textarea_observaciones textarea {
+  width: 735px;
+  height: 128px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  padding: 10px;
 }
